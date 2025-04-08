@@ -24,16 +24,13 @@ export default function ConvertPage() {
   
   // Try to initialize filename from localStorage on component mount
   useEffect(() => {
-    try {
-      const storedFileName = localStorage.getItem('vtt_converter_last_filename');
-      if (storedFileName && !originalFileName) {
-        console.log("Initializing filename from localStorage:", storedFileName);
-        setOriginalFileName(storedFileName);
-      }
-    } catch (error) {
-      console.error("Failed to retrieve filename from localStorage:", error);
+    const storedFileName = localStorage.getItem('vtt_converter_last_filename');
+    // Only set the filename if we don't already have one and there is a stored value
+    if (storedFileName && !originalFileName) {
+      console.log("Initializing filename from localStorage:", storedFileName);
+      setOriginalFileName(storedFileName);
     }
-  }, []); // Empty dependency array since we only want this to run once on mount
+  }, []); // We want this to run only once on mount
 
   const handleFileProcessed = (subtitle: ParsedSubtitle) => {
     setParsedSubtitle(subtitle)

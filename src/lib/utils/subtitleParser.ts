@@ -184,7 +184,7 @@ const parseSRT = (content: string): SubtitleCue[] => {
   return cues;
 };
 
-export const parseSubtitles = (content: string): ParsedSubtitle => {
+export const parseSubtitles = (content: string, fileName: string = 'subtitle.vtt'): ParsedSubtitle => {
   console.log("parseSubtitles called with content length:", content.length);
   
   // Check if this is the special format with <00:00:00.000><c> tags
@@ -194,7 +194,8 @@ export const parseSubtitles = (content: string): ParsedSubtitle => {
     return {
       cues,
       format: 'vtt', // Treating this as VTT format
-      originalText: content
+      originalText: content,
+      fileName
     };
   }
   
@@ -206,7 +207,8 @@ export const parseSubtitles = (content: string): ParsedSubtitle => {
   return {
     cues,
     format,
-    originalText: content
+    originalText: content,
+    fileName
   };
 };
 
