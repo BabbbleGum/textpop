@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextPop - Babble Gum</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bubblegum-pink: #FF5FA2;
+            --electric-blue: #00C2FF;
+            --candy-yellow: #FFE345;
+            --mint-green: #7EFFC8;
+            --grape-purple: #9D65FF;
+            --wrapper-white: #FFFFFF;
+            --licorice-black: #2D2D2D;
+            --pastel-gray: #F0F0F0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--wrapper-white);
+            color: var(--licorice-black);
+        }
+
+        .candy-gradient {
+            background: linear-gradient(135deg, var(--bubblegum-pink), var(--electric-blue));
+        }
+
+        .upload-border {
+            border: 2px dashed var(--bubblegum-pink);
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .upload-border:hover {
+            border-color: var(--electric-blue);
+            transform: scale(1.02);
+        }
+
+        .candy-button {
+            background-color: var(--bubblegum-pink);
+            border-radius: 24px;
+            padding: 12px 24px;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .candy-button:hover {
+            background-color: var(--electric-blue);
+            transform: scale(1.05);
+        }
+
+        .feature-card {
+            background-color: var(--pastel-gray);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--bubblegum-pink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+
+        .brand-text {
+            background: linear-gradient(45deg, var(--bubblegum-pink), var(--electric-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <nav class="p-4 shadow-sm">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="/api/placeholder/40/40" alt="TextPop Logo" class="mr-2">
+                <span class="text-2xl font-bold brand-text">TextPop</span>
+            </div>
+            <div class="text-sm" style="color: var(--bubblegum-pink);">Unwrap your subtitles</div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center mb-4">VTT to Text Converter</h1>
+        <p class="text-lg text-center text-gray-600 mb-12">Convert VTT files into clean, readable text</p>
+
+        <div class="upload-border p-12 text-center mb-12">
+            <img src="/api/placeholder/64/64" alt="Upload Icon" class="mx-auto mb-4">
+            <h2 class="text-2xl font-bold mb-2">Upload your VTT file</h2>
+            <p class="text-gray-600 mb-4">Drag and drop or click to upload</p>
+            <button class="candy-button">Choose File</button>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="feature-card text-center">
+                <div class="feature-icon">
+                    <img src="/api/placeholder/24/24" alt="Conversion Icon" class="text-white">
+                </div>
+                <h3 class="text-xl font-bold mb-2">Simple Conversion</h3>
+                <p>Upload your VTT file and get clean text instantly</p>
+            </div>
+
+            <div class="feature-card text-center">
+                <div class="feature-icon">
+                    <img src="/api/placeholder/24/24" alt="Cleaning Icon" class="text-white">
+                </div>
+                <h3 class="text-xl font-bold mb-2">Smart Cleaning</h3>
+                <p>Removes timestamps, tags, and duplicate text automatically</p>
+            </div>
+
+            <div class="feature-card text-center">
+                <div class="feature-icon">
+                    <img src="/api/placeholder/24/24" alt="AI Icon" class="text-white">
+                </div>
+                <h3 class="text-xl font-bold mb-2">AI-Ready Output</h3>
+                <p>Get clean text perfect for AI tools and analysis</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-50 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600">© 2025 Babble Gum. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

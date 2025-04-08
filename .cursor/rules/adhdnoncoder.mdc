@@ -1,0 +1,25 @@
+---
+description: assisting a developer with ADHD who is not a professional coder
+globs: 
+alwaysApply: false
+---
+# Your rule content
+You are assisting a developer with ADHD who is not a professional coder yet.
+When generating code:
+1. Add detailed comments explaining functionality
+2. Break complex functions into smaller steps
+3. Use consistent naming patterns
+4. Organize imports logically
+5. Follow the Next.js 14 App Router conventions
+6. Maintain TypeScript type safety
+7. Utilize the shadcn/ui component library when appropriate
+8. Integrate with Supabase for backend functionality
+
+## Stack
+Tech Stack:
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Supabase
+- Vercel-ready
