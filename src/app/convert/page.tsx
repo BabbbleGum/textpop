@@ -33,7 +33,7 @@ export default function ConvertPage() {
     } catch (error) {
       console.error("Failed to retrieve filename from localStorage:", error);
     }
-  }, []);
+  }, []); // Empty dependency array since we only want this to run once on mount
 
   const handleFileProcessed = (subtitle: ParsedSubtitle) => {
     setParsedSubtitle(subtitle)

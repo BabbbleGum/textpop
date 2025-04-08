@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   Accordion,
   AccordionContent,
@@ -55,16 +56,16 @@ export default function FAQPage() {
           </AccordionItem>
 
           <AccordionItem value="item-6">
-            <AccordionTrigger>My subtitle file isn't converting correctly. What should I do?</AccordionTrigger>
+            <AccordionTrigger>My subtitle file isn&apos;t converting correctly. What should I do?</AccordionTrigger>
             <AccordionContent>
-              First, check that your file is in a supported format (VTT or SRT). If you're still having issues, try validating your subtitle file with a subtitle editor before uploading. If problems persist, please contact us for support.
+              First, check that your file is in a supported format (VTT or SRT). If you&apos;re still having issues, try validating your subtitle file with a subtitle editor before uploading. If problems persist, please contact us for support.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-7">
             <AccordionTrigger>Is there an API available for CleanScript?</AccordionTrigger>
             <AccordionContent>
-              Not at the moment, but we're considering adding an API in the future. If you're interested in integrating CleanScript into your application, please contact us.
+              Not at the moment, but we&apos;re considering adding an API in the future. If you&apos;re interested in integrating CleanScript into your application, please contact us.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

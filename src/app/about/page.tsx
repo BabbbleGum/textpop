@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function AboutPage() {
   return (
     <main className="container mx-auto px-4 py-12">
@@ -15,9 +16,9 @@ export default function AboutPage() {
           <h2>Why CleanScript?</h2>
           <p>
             CleanScript was created to solve a simple problem: extracting clean, 
-            readable text from subtitle files. Whether you're working with VTT, SRT, 
+            readable text from subtitle files. Whether you&apos;re working with VTT, SRT, 
             or other subtitle formats, CleanScript makes it easy to convert them 
-            into plain text that's ready for analysis, AI processing, or any other use.
+            into plain text that&apos;s ready for analysis, AI processing, or any other use.
           </p>
 
           <h2>Our Features</h2>
@@ -31,7 +32,7 @@ export default function AboutPage() {
               common subtitle formats
             </li>
             <li>
-              <strong>AI-Ready Text</strong> - Get perfectly formatted text that's ready 
+              <strong>AI-Ready Text</strong> - Get perfectly formatted text that&apos;s ready 
               for AI tools and analysis
             </li>
             <li>
@@ -48,7 +49,7 @@ export default function AboutPage() {
           </p>
           <p>
             Simply upload your subtitle file, wait a moment for processing, and download 
-            your clean text. It's that easy!
+            your clean text. It&apos;s that easy!
           </p>
         </div>
       </div>
