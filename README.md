@@ -1,63 +1,100 @@
-# Next.js Boilerplate
+# TextPop: VTT to TXT Converter
 
-An open source boilerplate built using **Next.js 14**, **TypeScript**, and **Tailwind CSS**
+<p align="center">
+  <img src="public/logo.png" alt="TextPop Logo" width="120" height="120" />
+</p>
+
+<p align="center">
+  <strong>Convert VTT subtitle files to clean text for AI processing</strong>
+</p>
+
+<p align="center">
+  <a href="https://textpop.vercel.app/">Visit TextPop</a> •
+  <a href="#features">Features</a> •
+  <a href="#use-cases">Use Cases</a> •
+  <a href="#how-it-works">How It Works</a> •
+  <a href="#development">Development</a> •
+  <a href="#license">License</a>
+</p>
+
+---
+
+## What is TextPop?
+
+TextPop is a simple, focused web application that converts VTT subtitle files into clean, readable text. It automatically removes timestamps, eliminates duplicates, and merges fragmented text for optimal readability, especially for AI tools and content repurposing.
+
+### Why TextPop?
+
+Most subtitle converters are bundled into complex video editing tools or require technical knowledge to use. TextPop provides a dedicated, distraction-free solution specifically designed for producing clean, AI-ready text with zero technical skills required.
 
 ## Features
 
-With this template, you get all the awesomeness you need:
+- **One-Click Conversion**: Simple upload interface with immediate download of cleaned text
+- **Advanced Text Cleaning**: Automatic removal of timestamps, deduplication of phrases, and merging of fragmented sentences
+- **AI-Optimized Output**: Text formatting specifically designed for maximum compatibility with AI tools
+- **Browser-Based Processing**: All conversion happens in your browser - your files never leave your computer
+- **Zero Learning Curve**: No account needed, no complicated settings, just instant results
 
-- Advanced Folder Structures
-- [Next.js](https://nextjs.org/) with App Router support
-- Type checking [TypeScript](https://www.typescriptlang.org/)
-- Styled using [Tailwind CSS](https://tailwindcss.com/)
-- State management with [Zustand](https://zustand-demo.pmnd.rs/)
-- Authentication with [NextAuth.js](https://next-auth.js.org/)
-- UI Components built with [shadcn/ui](https://ui.shadcn.com/)
-- Data Fetching, Caching and Mutation with [TanStack Query](https://tanstack.com/query/latest)
-- Linter with [ESLint](https://eslint.org/)
-- Code Formatter with [Prettier](https://prettier.io/)
-- Form handling with [React Hook Form](https://react-hook-form.com/)
-- Validation library with [Zod](https://zod.dev/)
-- [Storybook](https://storybook.js.org/) for UI development
-- Beautiful and consistent icons from [Lucide](https://lucide.dev/)
-- Loading UI using [Skeleton Components](https://ui.shadcn.com/docs/components/skeleton)
-- Dark theme with [next-themes](https://npmjs.com/package/next-themes)
-- [Absolute Imports](https://nextjs.org/docs/pages/building-your-application/configuring/absolute-imports-and-module-aliases) with `@` prefix
-- [Husky](https://typicode.github.io/husky/) for Git Hooks
-- Sitemap.xml and robots.txt with [next-sitemap](https://www.npmjs.com/package/next-sitemap)
-- Metadata files optimized for SEO
-- Storage helpers for Local, Session, Cookies
-- 💯 Maximize lighthouse score
+## Use Cases
 
-## Project structure
+- **Content Creators**: Convert video subtitles to text for blog posts, social media, and AI content generation
+- **Educators**: Create clean transcripts of lecture videos for student resources and searchable archives
+- **Podcast Producers**: Extract clean text from subtitle files for show notes, SEO, and content repurposing
+- **AI Enthusiasts**: Prepare subtitle text for feeding into AI tools for analysis, summaries, or further processing
+- **Researchers**: Extract spoken content from videos for analysis and documentation
 
-```shell
-│
-├── public                          # Public assets folder
-├── src
-│   ├── app                         # Next JS App (App Router)
-│   ├── components                  # React components
-│   │   ├── features                # Containing logic operations
-│   │   ├── shared                  # Header, footer, aside components
-│   │   ├── skeletons               # Loading components
-│   │   ├── ui                      # Atomic components
-│   │   └── widgets                 # Advanced components
-│   ├── config                      # Configuration files
-│   ├── data                        # Static or mock data
-│   ├── helpers                     # Helper functions
-│   ├── hooks                       # React hooks
-│   ├── lib                         # Utilities folder
-│   ├── providers                   # All providers
-│   ├── services                    # API services
-│   ├── stores                      # Zustand stores
-│   └── types                       # Type definitions
-├── .eslintrc.json                  # ESLint configuration
-├── .prettierrc                     # Prettier configuration
-├── components.json                 # shadcn/ui configuration
-├── next-sitemap.config.js          # next-sitemap configuration
-├── next.config.mjs                 # Next.js configuration
-├── postcss.config.js               # PostCSS configuration
-├── README.md                       # README file
-├── tailwind.config.js              # Tailwind CSS configuration
-└── tsconfig.json                   # TypeScript configuration
+## How It Works
+
+1. **Upload**: Drag & drop or select your VTT file
+2. **Process**: TextPop automatically cleans and formats the text
+3. **Download**: Get your clean text file instantly
+
+That's it! No account creation, no complex settings, no technical knowledge required.
+
+## Development
+
+TextPop is built with modern web technologies:
+
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [shadcn/ui](https://ui.shadcn.com/) - UI components
+
+### Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/BabbbleGum/textpop.git
+
+# Navigate to the project directory
+cd textpop
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Upcoming Features
+
+- Batch processing for multiple files
+- Additional output format options
+- Custom text cleaning preferences
+- Integration with cloud storage services
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+Found a bug or have a feature request? [Open an issue](https://github.com/BabbbleGum/textpop/issues) on GitHub.
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/BabbbleGum">BabbbleGum</a>
+</p>
