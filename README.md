@@ -1,7 +1,9 @@
 # TextPop: VTT to TXT Converter
 
 <p align="center">
-  <img src="public/logo.png" alt="TextPop Logo" width="120" height="120" />
+  <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 32 32">
+    <circle cx="16" cy="16" r="14" fill="#FF69B4" stroke="#333333" stroke-width="2"/>
+  </svg>
 </p>
 
 <p align="center">
