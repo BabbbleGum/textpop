@@ -20,7 +20,11 @@ const inter = Inter({ subsets: ["latin"] })
 // Define metadata for SEO and social sharing
 export const metadata: Metadata = {
 	title: siteConfig.title,
-	description: siteConfig.description
+	description: siteConfig.description,
+	icons: {
+		icon: "/TextPopLogo.png",
+		apple: "/TextPopLogo.png"
+	}
 }
 
 /**
