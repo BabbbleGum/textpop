@@ -72,11 +72,31 @@ cd textpop
 # Install dependencies
 npm install
 
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your values
+
 # Start the development server
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Environment Variables
+
+TextPop uses environment variables for configuration. An `.env.example` file is provided as a template. For local development:
+
+1. Copy `.env.example` to `.env.local`
+2. Edit the values as needed
+
+**Important**: Never commit actual `.env` files to the repository. The `.gitignore` file is configured to exclude these files to protect sensitive information.
+
+Required environment variables:
+- `NEXT_PUBLIC_BASE_URL`: API base URL
+- `AUTH_URL`: Authentication URL
+- `AUTH_SECRET`: Secret for authentication
+- `GITHUB_ID`: GitHub OAuth ID
+- `GITHUB_SECRET`: GitHub OAuth Secret
 
 ## Upcoming Features
 
