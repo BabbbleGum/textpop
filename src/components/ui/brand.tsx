@@ -20,13 +20,14 @@ const Brand = () => {
  */
 const Logo = ({ className }: { className?: string }) => {
 	return (
-		<div className={cn("", className)}>
+		<div className={cn("relative flex items-center justify-center", className)}>
 			<Image 
 				src="/TextPopLogo.png" 
 				alt="TextPop Logo" 
-				width={30} 
-				height={30} 
-				className="h-auto w-auto"
+				width={32} 
+				height={32} 
+				style={{ width: 'auto', height: 'auto' }}
+				priority
 			/>
 		</div>
 	)
