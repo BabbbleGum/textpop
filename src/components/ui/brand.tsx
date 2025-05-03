@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { FileText } from "lucide-react"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 /**
@@ -21,12 +21,14 @@ const Brand = () => {
 const Logo = ({ className }: { className?: string }) => {
 	return (
 		<div className={cn("flex items-center justify-center", className)}>
-			{/* Using a simple div with background image instead of Next.js Image component */}
-			<div 
-				className="h-6 w-6 bg-contain bg-center bg-no-repeat" 
-				style={{ backgroundImage: "url('/TextPopLogo.png')" }}
-				role="img"
-				aria-label="TextPop Logo"
+			<Image 
+				src="/TextPopLogo.png" 
+				alt="TextPop Logo" 
+				width={24} 
+				height={24} 
+				className="h-6 w-6"
+				unoptimized // This ensures the image is not processed by Next.js Image Optimization
+				priority
 			/>
 		</div>
 	)
