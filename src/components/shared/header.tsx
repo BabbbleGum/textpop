@@ -12,7 +12,7 @@ export const Header = () => {
 			<div className="container flex items-center justify-between">
 				<div className="flex items-center gap-2">
 					<Link href="/" className="flex items-center gap-2">
-						<Brand.Logo className="h-8 w-8" />
+						<Brand.Logo className="flex-shrink-0" />
 						<Brand.Text className="text-xl font-semibold text-pink-500" />
 					</Link>
 				</div>
