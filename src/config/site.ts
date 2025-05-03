@@ -10,15 +10,15 @@
 
 export const siteConfig = {
 	// Site metadata for SEO and social sharing
-	title: "CleanScript | Convert Subtitles to Clean Text",
-	url: "https://cleanscript.vercel.app",
+	title: "TextPop | VTT 2 TXT Converter",
+	url: "https://textpop.vercel.app",
 	description:
 		"Convert your VTT and SRT files into clean, readable text for AI tools and analysis",
 	
 	// External links and social media profiles
 	links: {
-		github: "https://github.com/cleanscript/cleanscript",
-		twitter: "https://twitter.com/cleanscript",
-		linkedin: "https://linkedin.com/company/cleanscript"
+		github: "https://github.com/BabbbleGum/textpop",
+		twitter: "https://twitter.com/textpop",
+		linkedin: "https://linkedin.com/company/textpop"
 	}
 }

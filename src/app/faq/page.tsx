@@ -15,15 +15,15 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to know about CleanScript
+            Everything you need to know about TextPop
           </p>
         </div>
 
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
-            <AccordionTrigger>What file formats does CleanScript support?</AccordionTrigger>
+            <AccordionTrigger>What file formats does TextPop support?</AccordionTrigger>
             <AccordionContent>
-              CleanScript currently supports VTT and SRT subtitle files. We plan to add support for more formats in the future.
+              TextPop currently supports VTT and SRT subtitle files. We plan to add support for more formats in the future.
             </AccordionContent>
           </AccordionItem>
 
@@ -49,9 +49,9 @@ export default function FAQPage() {
           </AccordionItem>
 
           <AccordionItem value="item-5">
-            <AccordionTrigger>Can I use CleanScript for commercial purposes?</AccordionTrigger>
+            <AccordionTrigger>Can I use TextPop for commercial purposes?</AccordionTrigger>
             <AccordionContent>
-              Yes! CleanScript is free to use for both personal and commercial purposes.
+              Yes! TextPop is free to use for both personal and commercial purposes.
             </AccordionContent>
           </AccordionItem>
 
@@ -63,9 +63,9 @@ export default function FAQPage() {
           </AccordionItem>
 
           <AccordionItem value="item-7">
-            <AccordionTrigger>Is there an API available for CleanScript?</AccordionTrigger>
+            <AccordionTrigger>Is there an API available for TextPop?</AccordionTrigger>
             <AccordionContent>
-              Not at the moment, but we&apos;re considering adding an API in the future. If you&apos;re interested in integrating CleanScript into your application, please contact us.
+              Not at the moment, but we&apos;re considering adding an API in the future. If you&apos;re interested in integrating TextPop into your application, please contact us.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

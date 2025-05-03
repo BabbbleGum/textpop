@@ -1,6 +1,6 @@
 /**
  * Home Page Component
- * Main landing page for the CleanScript application
+ * Main landing page for the TextPop application
  * Handles VTT file upload and text conversion functionality
  */
 

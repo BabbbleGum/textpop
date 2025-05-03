@@ -5,7 +5,7 @@ export default function AboutPage() {
       <div className="mx-auto max-w-4xl space-y-10">
         <div className="text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            About CleanScript
+            About TextPop
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Your tool for perfect text extraction from subtitle files
@@ -13,11 +13,11 @@ export default function AboutPage() {
         </div>
 
         <div className="prose dark:prose-invert max-w-none">
-          <h2>Why CleanScript?</h2>
+          <h2>Why TextPop?</h2>
           <p>
-            CleanScript was created to solve a simple problem: extracting clean, 
+            TextPop was created to solve a simple problem: extracting clean, 
             readable text from subtitle files. Whether you&apos;re working with VTT, SRT, 
-            or other subtitle formats, CleanScript makes it easy to convert them 
+            or other subtitle formats, TextPop makes it easy to convert them 
             into plain text that&apos;s ready for analysis, AI processing, or any other use.
           </p>
 
@@ -43,7 +43,7 @@ export default function AboutPage() {
 
           <h2>How It Works</h2>
           <p>
-            CleanScript uses advanced parsing algorithms to extract the text content from 
+            TextPop uses advanced parsing algorithms to extract the text content from 
             subtitle files, removing timestamps, identifiers, and other metadata. The result 
             is clean, readable text that you can use for your projects.
           </p>
