@@ -12,8 +12,8 @@ export const Header = () => {
 			<div className="container flex items-center justify-between">
 				<div className="flex items-center gap-2">
 					<Link href="/" className="flex items-center gap-2">
-						<Brand.Logo className="flex-shrink-0" />
-						<Brand.Text className="text-xl font-semibold text-pink-500" />
+						<Brand.Logo />
+						<Brand.Text className="text-xl font-semibold text-gray-700" />
 					</Link>
 				</div>
 				<div className="text-sm text-pink-500">Unwrap your subtitles</div>
