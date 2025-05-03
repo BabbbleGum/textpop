@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { FileText } from "lucide-react"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 /**
@@ -20,8 +20,14 @@ const Brand = () => {
  */
 const Logo = ({ className }: { className?: string }) => {
 	return (
-		<div className={cn("p-1", className)}>
-			<FileText className="h-5 w-5 text-pink-500" />
+		<div className={cn("", className)}>
+			<Image 
+				src="/TextPopLogo.png" 
+				alt="TextPop Logo" 
+				width={30} 
+				height={30} 
+				className="h-auto w-auto"
+			/>
 		</div>
 	)
 }
