@@ -1,1 +1,2 @@
-console.log('Creating a data URL image for the TextPop logo'); const fs = require('fs'); const canvas = require('canvas'); const Canvas = canvas.Canvas; const c = new Canvas(32, 32); const ctx = c.getContext('2d'); ctx.fillStyle = '#FF69B4'; ctx.beginPath(); ctx.arc(16, 16, 14, 0, Math.PI * 2); ctx.fill(); ctx.strokeStyle = '#333'; ctx.lineWidth = 2; ctx.stroke(); const buffer = c.toBuffer('image/png'); fs.writeFileSync('public/textpoplogo.png', buffer);
+// This file is deprecated as we're now using text-only branding
+// Keeping it for reference but it's no longer used in the application
