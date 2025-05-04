@@ -23,9 +23,10 @@ const Logo = ({ className }: { className?: string }) => {
 			<img 
 				src="/textpoplogo.svg"
 				alt="TextPop Logo" 
-				width={32} 
-				height={32} 
-				className="h-8 w-8"
+				width={24} 
+				height={24} 
+				className="h-6 w-6"
+				style={{ objectFit: "contain" }}
 			/>
 		</div>
 	)
