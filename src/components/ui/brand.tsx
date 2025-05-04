@@ -20,14 +20,14 @@ const Brand = () => {
 const Logo = ({ className }: { className?: string }) => {
 	return (
 		<div className={cn("flex items-center", className)}>
-			<div 
-				className="relative h-6 w-6 overflow-hidden flex items-center justify-center"
-			>
+			<div className="relative w-8 h-8 flex items-center justify-center">
 				<img 
 					src="/textpoplogo.svg"
 					alt="TextPop Logo" 
-					className="max-h-full max-w-full"
+					className="w-full h-auto" 
 					style={{ 
+						maxWidth: "100%",
+						maxHeight: "100%",
 						objectFit: "contain",
 						objectPosition: "center"
 					}}
@@ -42,14 +42,8 @@ const Logo = ({ className }: { className?: string }) => {
  */
 const Text = ({ className }: { className?: string }) => {
 	return (
-		<span className={cn("text-xl font-semibold", className)}>
-			TextPop
-		</span>
+		<span className={cn("font-bold text-xl", className)}>TextPop</span>
 	)
 }
 
-// Attach subcomponents to the Brand component
-Brand.Logo = Logo
-Brand.Text = Text
-
-export { Brand }
+export { Brand, Logo, Text }
