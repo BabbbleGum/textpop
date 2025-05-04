@@ -20,14 +20,19 @@ const Brand = () => {
 const Logo = ({ className }: { className?: string }) => {
 	return (
 		<div className={cn("flex items-center", className)}>
-			<img 
-				src="/textpoplogo.svg"
-				alt="TextPop Logo" 
-				width={24} 
-				height={24} 
-				className="h-6 w-6"
-				style={{ objectFit: "contain" }}
-			/>
+			<div 
+				className="relative h-6 w-6 overflow-hidden flex items-center justify-center"
+			>
+				<img 
+					src="/textpoplogo.svg"
+					alt="TextPop Logo" 
+					className="max-h-full max-w-full"
+					style={{ 
+						objectFit: "contain",
+						objectPosition: "center"
+					}}
+				/>
+			</div>
 		</div>
 	)
 }
