@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 /**
@@ -21,12 +20,12 @@ const Brand = () => {
 const Logo = ({ className }: { className?: string }) => {
 	return (
 		<div className={cn("flex items-center", className)}>
-			<Image 
-				src="/TextPopLogo.png" 
+			<img 
+				src="/textpoplogo.svg"
 				alt="TextPop Logo" 
-				width={24} 
-				height={24} 
-				className="h-6 w-6"
+				width={32} 
+				height={32} 
+				className="h-8 w-8"
 			/>
 		</div>
 	)
